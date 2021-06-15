@@ -1,7 +1,7 @@
 package com.mqubits.memberships.services;
 
+import com.mqubits.customers.models.dto.MembershipDTO;
 import com.mqubits.memberships.models.Membership;
-import com.mqubits.memberships.models.dto.MembershipDTO;
 import com.mqubits.memberships.models.dto.TimelineDTO;
 import com.mqubits.memberships.repositories.MembershipRepository;
 import org.springframework.beans.factory.annotation.Autowired;

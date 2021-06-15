@@ -6,7 +6,7 @@ spring:
     console:
       enabled: false
   datasource:
-    url: jdbc:h2:file:./customers;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;
+    url: jdbc:h2:file:./memberships;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;
     driverClassName: org.h2.Driver
     username: sa
     password: password

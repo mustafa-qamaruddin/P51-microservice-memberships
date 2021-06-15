@@ -1,6 +1,6 @@
 package com.mqubits.memberships.services;
 
-import com.mqubits.memberships.models.dto.MembershipDTO;
+import com.mqubits.customers.models.dto.MembershipDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

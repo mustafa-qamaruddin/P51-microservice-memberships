@@ -1,6 +1,6 @@
 package com.mqubits.memberships.services;
 
-import com.mqubits.memberships.models.dto.MembershipDTO;
+import com.mqubits.customers.models.dto.MembershipDTO;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,6 +48,9 @@ class MembershipServiceTest {
         verifyCountDown(testKafkaConsumer);
         assertEquals(testKafkaConsumer.getTimelineDTO().getCustomer(), testEmployee);
         assertEquals(testKafkaConsumer.getTimelineDTO().getTimeline(), testTimeline);
+
+        // delete membership clean
+        membershipService.membershipRepository.deleteAll();
     }
 
     private void verifyCountDown(TestKafkaConsumer consumer) {
